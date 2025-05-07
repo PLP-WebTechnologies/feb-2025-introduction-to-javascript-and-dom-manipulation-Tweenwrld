@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript &amp; DOM Manipulation Assignment</title>
+  <style>
+    /* Basic styling for layout and visual feedback */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    header, footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    main {
+      margin: 20px 0;
+    }
+    section {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+    }
+    button {
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    /* Class to add visual emphasis to dynamically added elements */
+    .highlight {
+      color: #d63384;
+      font-weight: bold;
+    }
+    /* A div that will have its style modified by JavaScript */
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="mainTitle">Welcome to the DOM Manipulation Demo</h1>
+  </header>
+
+  <main>
+    <!-- Section to dynamically change text content -->
+    <section>
+      <p id="textContent">This text will change when you click the button.</p>
+      <button id="changeTextBtn">Change Text</button>
+    </section>
+
+    <!-- Section to modify CSS styles via JavaScript -->
+    <section>
+      <div id="colorBox"></div>
+      <button id="changeStyleBtn">Toggle Box Color</button>
+    </section>
+
+    <!-- Section to add or remove elements dynamically -->
+    <section>
+      <p>Manage your list items dynamically:</p>
+      <button id="addElementBtn">Add a List Item</button>
+      <button id="removeElementBtn">Remove Last List Item</button>
+      <ul id="dynamicList">
+        <li>List Item 1</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DOM Manipulation Assignment</p>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
